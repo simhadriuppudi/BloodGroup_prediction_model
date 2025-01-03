@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Group Classification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Blood Group Classifier</h1>
+      <ul>
+        <li><a href="#upload">Upload</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload">
+      <h2>Upload Fingerprint Image</h2>
+      <p>Select an image of your fingerprint to predict the blood group.</p>
+      <input type="file" id="fileInput" accept="image/*">
+      <button onclick="submitImage()">Predict Blood Group</button>
+      <div id="result"></div>
+    </section>
+
+    <section id="about">
+      <h2>About This Classifier</h2>
+      <p>This AI-powered classifier uses deep learning to predict blood groups based on fingerprint images.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blood Group Classifier | <a href="mailto:support@example.com">Contact Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
